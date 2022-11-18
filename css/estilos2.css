@@ -161,3 +161,12 @@ footer a:hover {
 .zoom:hover {
     transform: scale(1.1);
 }
+
+.input-registro:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fad293;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.25rem rgb(245 164 38 / 25%);
+    box-shadow: 0 0 0 0.25rem rgb(245 164 38 / 25%);
+}

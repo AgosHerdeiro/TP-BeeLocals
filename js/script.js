@@ -312,15 +312,91 @@ $('#notif').click(function () {
     $('#bola').hide();
 });
 
-$('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15, // Creates a dropdown of 15 years to control year,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    closeOnSelect: false, // Close upon selecting a date,
-    container: undefined, // ex. 'body' will append picker to body
+$("#botones1").click(function(){
+    if($("#botones1").hasClass("orange")){
+        $('#botones1').removeClass('orange');
+        $('#botones1').addClass('grey lighten-1');
+ 
+    }else{
+        $('#botones1').removeClass('grey lighten-1');
+        $('#botones1').addClass('orange');
+    }
 });
 
+$("#botones2").click(function(){
+    if($("#botones2").hasClass("orange")){
+        $('#botones2').removeClass('orange');
+        $('#botones2').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones2').removeClass('grey lighten-1');
+    $('#botones2').addClass('orange');
+    }
+});
 
+$("#botones3").click(function(){
+    if($("#botones3").hasClass("orange")){
+        $('#botones3').removeClass('orange');
+        $('#botones3').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones3').removeClass('grey lighten-1');
+    $('#botones3').addClass('orange');
+    }
+});
+
+$("#botones4").click(function(){
+    if($("#botones4").hasClass("orange")){
+        $('#botones4').removeClass('orange');
+        $('#botones4').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones4').removeClass('grey lighten-1');
+    $('#botones4').addClass('orange');
+    }
+});
+
+$("#botones5").click(function(){
+    if($("#botones5").hasClass("orange")){
+        $('#botones5').removeClass('orange');
+        $('#botones5').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones5').removeClass('grey lighten-1');
+    $('#botones5').addClass('orange');
+    }
+});
+
+$("#botones6").click(function(){
+    if($("#botones6").hasClass("orange")){
+        $('#botones6').removeClass('orange');
+        $('#botones6').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones6').removeClass('grey lighten-1');
+    $('#botones6').addClass('orange');
+    }
+});
+
+$("#botones7").click(function(){
+    if($("#botones7").hasClass("orange")){
+        $('#botones7').removeClass('orange');
+        $('#botones7').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones7').removeClass('grey lighten-1');
+    $('#botones7').addClass('orange');
+    }
+});
+
+$("#botones8").click(function(){
+    if($("#botones8").hasClass("orange")){
+        $('#botones8').removeClass('orange');
+        $('#botones8').addClass('grey lighten-1');
+ 
+    }else{
+    $('#botones8').removeClass('grey lighten-1');
+    $('#botones8').addClass('orange');
+    }
+});
 

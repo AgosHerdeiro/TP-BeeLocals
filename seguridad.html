@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="libs/materialize/css/materialize.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="libs/materialize/js/materialize.min.js"></script>
+    
+</head>
+<body>
+    <header class="row m-3 d-flex align-items-center">
+        <div class="col s4">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo-beelocals" width="120" height="96">
+            </a>
+        </div>
+        <div class="col s8 center">
+            <p class="cocon-titulo m-0">Live like a local</p>
+        </div>
+        <div class="col s4 hide-on-small-only"></div>
+    </header>
+
+    <nav class="bg-primary bg-gradient z-depth-3">
+        <ul class="d-flex justify-content-center">
+            <li class="mx-2 px-1"><a href="house-sitter.html" class="raleway-uppercase nav-text">House-sitters</a></li>
+            <li class="mx-2 px-1"><a href="home-owner.html" class="raleway-uppercase nav-text">Home-owners</a></li>
+            <li class="mx-2 px-1"><a href="como-funciona.html" class="raleway-uppercase nav-text">Cómo funciona</a>
+            </li>
+            <li class="mx-2 px-1"><a href="registro.html" class="raleway-uppercase nav-text">Registrarse</a></li>
+            <li class="mx-2 px-1"><a href="inicio-sesion.html" class="raleway-uppercase nav-text">Iniciar sesión</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="cocon-titulo text-center my-5 pt-4">Verificacion de identidad</h2>
+
+    <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">
+        Para continuar necesitamos comprobar que sos vos. Completá tus datos y podrás seguir operando, solo tomará un minuto.
+    </p>
+
+    <!-- seguridad dni -->
+    <div class="m-auto container row d-flex flex-row justify-content-between card mb-4 pb-3" style="width: 950px;" id="seguridadDni">
+          
+          <div class="d-flex pt-4">
+            <img src="images/icons/n1.svg" alt="" width="25" height="25">
+        <p class="waves-effect waves-light raleway-bold">Agregá una foto del frente de tu DNI</p>
+    </div>
+       
+        <p class="raleway-normal text-center m-auto my-3" style="width: 80%;">
+            Tiene que ser un DNI a tu nombre. Asegurate que se lean bien los datos antes de enviar.
+         </p>
+        <div class="m-2 d-flex justify-content-center align-items-center">
+         <img class="z-depth-3 align-items-center" src="images/dni.jpg" alt="fotos dni" width="55%" height="250">
+        </div>
+    
+        <!-- <div class="d-flex justify-content-center">
+        <button type="submit" id="continuar"
+        class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light m-4 "
+        data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 30%;">Continuar</button>
+    </div> -->
+    </div>
+
+    <!-- seguridad telefono -->
+    <div class="m-auto container row d-flex flex-row justify-content-between card mb-4" style="width: 950px;" id="seguridadTel">
+        
+          
+        <div class="d-flex pt-4">
+          <img src="images/icons/n2.svg" alt="" width="25" height="25">
+      <p class="waves-effect waves-light raleway-bold">Te enviaremos un código al número ingresado anteriormente </p>
+  </div>
+     
+      <p class="raleway-normal mx-4 my-1" style="width: 80%;">
+        Elige cómo quieres recibir el código
+       </p>
+       <!-- imagenes -->
+      <div class="m-2 d-flex justify-content-center align-items-center">
+       <img class="z-depth-3 align-items-center  p-2 m-5" src="images/llamadaTelefono.jpg" alt="llamadaTel" width="30%" height="270">
+       <img class="z-depth-3 align-items-center  p-2 m-5" src="images/mensajeTexto.jpg" alt="msgTexto" width="30%" height="270">
+      </div>
+
+    <div class="col s12">
+      <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">
+        Te hemos enviado un SMS con un código al número anteriormente indicado
+
+    </p>
+
+    <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">
+        Para completar la verificación de tu número de teléfono, por favor, ingresa el código de activación de 6 dígitos.
+    </p>
+
+    <div class="d-flex justify-content-center align-items-center">
+        
+        <img class="align-items-center m-2" src="images/icons/LineaDigito.svg" alt="linea" width="25" height="25">
+        <img class="align-items-center m-2" src="images/icons/LineaDigito.svg" alt="linea" width="25" height="25">
+        <img class="align-items-center m-2" src="images/icons/LineaDigito.svg" alt="linea" width="25" height="25">
+      
+        <img class="align-items-center m-2" src="images/icons/LineaDigito.svg" alt="linea" width="25" height="25">
+        <img class="align-items-center m-2" src="images/icons/LineaDigito.svg" alt="linea" width="25" height="25">
+        <img class="align-items-center m-2" src="images/icons/LineaDigito.svg" alt="linea" width="25" height="25">
+        
+
+    </div>
+
+    <p class="raleway-normal text-center m-auto my-3" style="width: 50%;">
+        ¿No recibiste el mensaje? Haz clic en el siguiente enlance
+    </p>
+
+    <a href="#"> <p class="raleway-normal text-center m-auto my-3" style="width: 50%; text-decoration-line: underline;">
+        Reenviar codigo
+    </p></a>
+
+
+    </div>
+  
+      <!-- <div class="d-flex justify-content-center">
+      <button type="submit"
+      class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light m-4 "
+      data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 30%;">Continuar</button>
+  </div> -->
+  </div>
+
+  <!-- confirmar correo -->
+  <div class="m-auto container row d-flex flex-row justify-content-between card mb-4" style="width: 950px;" id="confirmarCorreo">
+        
+          
+    <div class="d-flex pt-4">
+      <img src="images/icons/n3.svg" alt="" width="25" height="25">
+  <p class="waves-effect waves-light raleway-bold">Por último, debes activar tu cuenta a través del correo electrónico ingresado anteriormente</p>
+</div>
+ 
+  <p class="raleway-normal mx-4 my-1" style="width: 80%;">
+    ¡Haz clic en el botón de abajo para unirte a nuestra comunidad!
+   </p>
+   
+
+  
+  <button type="submit"
+  class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light m-4 "
+  data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 30%;">Confirmar correo</button>
+
+</div>
+
+ <!-- ingresar correo -->
+ <div class="m-auto container row d-flex flex-row justify-content-between card mb-4" style="width: 950px;" id="ingresoCorreoFinal">
+        
+          
+    <div class="d-flex pt-4">
+      <img src="images/icons/n4.svg" alt="" width="25" height="25">
+  <p class="waves-effect waves-light raleway-bold">Por último, debes activar tu cuenta a través del correo electrónico ingresado anteriormente</p>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+<p class="raleway-normal mx-5 my-1 text-center" style="width: 80%;">
+    Enviamos un correo a la dirección  usuario@mail.com con un link de verificación, haz clic en el enlace adjunto para activar tu cuenta y seguir con el proceso de registro
+   </p>
+</div>
+   
+
+  
+       
+        <div class="d-flex justify-content-center align-items-center container" style="width: 80%;">
+         
+            <textarea id="textarea1" class="materialize-textarea" placeholder="@ agregarUsuario" style="border-top: 0cm; border-left: 0; border-right: 0;"></textarea>
+          
+        </div>
+
+   
+
+  
+  <button type="submit"
+  class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light m-4 "
+  data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 30%;">Volver al registro</button>
+
+</div>
+
+
+
+     <!-- Footer -->
+    <footer class="row p-5 m-0 bg-primary bg-gradient" style="width: 100%;">
+        <div class="col mb-3">
+            <p class="raleway-bold">House-sitters</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra a un cuidador</a></li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Home-owners</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra una casa</a></li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Ayuda</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="como-funciona.html" class="nav-link p-0 text-dark">Cómo funciona</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Descubre más</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Opiniones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Experiencias</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3 d-flex flex-column align-items-start">
+            <p class="raleway-bold">Contáctenos</p>
+            <div class="d-flex justify-content-between">
+                <a href="https://www.instagram.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/instagram.svg" alt="" width="30" height="30"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="me-4 zoom" src="images/icons/twitter.svg"
+                        alt="" width="30" height="30"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/facebook.png" alt="" width="30" height="30"></a>
+            </div>
+            <div class="d-flex align-items-center my-3">
+                <img src="images/icons/email.svg" alt="" width="30" height="30">
+                <a class="ms-2 raleway-normal text-decoration-underline email"
+                    href="mailto:beelocals@hotmail.com?Subject=Consulta%20sobre%20House-sitting">Beelocals@hotmail.com</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/seguridadYregistro.js"></script>
+</body>
+</html>
