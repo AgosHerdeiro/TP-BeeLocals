@@ -36,11 +36,19 @@
 .cocon-titulo {
     font-family: 'Cocon';
     font-size: xx-large;
+    color: black;
 }
 
 .cocon {
     font-family: 'Cocon';
     font-size: x-large;
+    color: black;
+}
+
+.cocon-small {
+    font-family: 'Cocon';
+    font-size: large;
+    color: black;
 }
 
 .raleway-uppercase {

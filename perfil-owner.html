@@ -27,7 +27,7 @@
         </div>
         <div class="col s4 hide-on-small-only"></div>
     </header>
-   
+
     <nav class="bg-primary bg-gradient navbar p-0 d-flex justify-content-between">
         <div style="width: 350px;">
             <ul class="d-flex justify-content-start">
@@ -48,16 +48,17 @@
                     <a><img src="images/icons/search.svg" alt="" width="20" height="20" class="icon-izq mx-2"></a>
                     <input type="text" class="form-control input-icon ps-5" placeholder="¿A dónde quieres ir?"
                         style="border-radius: 11px;">
-                    <a><img src="images/icons/filter.svg" alt="" width="20" height="20" class="icon-der mx-2"></a>
+                    <a href="buscador.html"><img src="images/icons/filter.svg" alt="" width="20" height="20"
+                            class="icon-der mx-2"></a>
                 </div>
             </form>
         </div>
         <div style="width: 350px;">
             <ul class="d-flex justify-content-end">
-                <li>
+                <li id="notif">
                     <a class="dropdown-button position-relative" data-beloworigin="true" data-activates='dropdown1'>
                         <img src="images/icons/notif.svg" alt="" width="20" height="20" class="mx-3">
-                        <span class="position-absolute translate-middle bg-danger border border-light rounded-circle"
+                        <span id="bola" class="position-absolute translate-middle bg-danger border border-light rounded-circle"
                             style="left: 60%;
                             top: 40%; padding: 5px;">
                         </span>
@@ -79,20 +80,27 @@
     <div class="raleway-normal">
         <ul id="slide-out" class="side-nav">
             <li>
-                <div class="user-view">
+                <div class="user-view d-flex justify-content-center align-items-center py-5 px-2">
                     <div class="background bg-secondary bg-gradient"></div>
-                    <a><img class="circle" src="images/profile-1.jpg"></a>
-                    <a><span class="text-dark name">Sofía Becerra</span></a>
-                    <a><span class="text-dark email" style="font-size: medium;">House-sitter</span></a>
+                    <img src="images/logo.png" width="120" height="96">
+                    <p class="cocon-small">Live like a local</p>
                 </div>
             </li>
-            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-            <li><a href="#!">Second Link</a></li>
+            <li class="waves-effect" style="width: 100%;"><a href="perfil-sitter.html">House-sitters</a></li>
+            <li class="waves-effect" style="width: 100%;"><a href="perfil-owner.html">Home-owners</a></li>
             <li>
                 <div class="divider"></div>
             </li>
-            <li><a class="subheader">Subheader</a></li>
-            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            <li><a class="subheader">Ayuda</a></li>
+            <li class="waves-effect" style="width: 100%;"><a href="como-funciona.html">Cómo funciona</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Preguntas frecuentes</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Comunidad</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Blog</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Opiniones</a></li>
+            <li class="waves-effect" style="width: 100%;"><a>Experiencias</a></li>
         </ul>
     </div>
 
@@ -151,8 +159,438 @@
     </div>
 
     <main>
+        <section class="container-fluid">
+            <h2 class="raleway-bold px-5 pt-5" style="font-variant: small-caps;">se requiere un sitter para dos perritos
+                muy
+                amigables</h2>
+            <div class="d-flex align-items-center px-5 mb-4">
+                <img src="images/icons/map.svg" alt="" width="25" height="25">
+                <p class="m-0 ps-3">Saavedra, Buenos Aires, Argentina</p>
+            </div>
+            <div class="d-flex flex-row align-items-start px-5 mb-5">
+                <article class="raleway-normal">
+                    <div class="p-2 m-0 card">
+                        <div class="d-flex align-items-center flex-row">
+                            <div>
+                                <img class="me-2 rounded" src="images/owner-pet.jpg" alt="">
+                            </div>
+                            <div class="d-flex flex-column justify-content-between me-1">
+                                <img class="mb-1 rounded" src="images/owner-house-1.jpg" alt="" width="196"
+                                    height="196">
+                                <img class="mt-1 rounded" src="images/owner-house-2.jpg" alt="" width="196"
+                                    height="196">
+                            </div>
+                            <div class="d-flex flex-column justify-content-between ms-1">
+                                <img class="mb-1 rounded" src="images/owner-house-3.jpg" alt="" width="196"
+                                    height="196">
+                                <img class="mt-1 rounded" src="images/owner-house-4.jpg" alt="" width="196"
+                                    height="196">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end text-decoration-underline pt-1">
+                            <a>Mostrar todas las fotos</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="bg-secondary bg-gradient ms-3 borde z-depth-3" style="width: 100%; height: 447.75px;">
+                    <div class="d-flex flex-row align-items-center container-fluid">
+                        <div class="m-3">
+                            <img class="rounded-circle z-depth-3" src="images/profile-3.jpg" alt="" width="125"
+                                height="125">
+                        </div>
+                        <div class="m-3">
+                            <div>
+                                <p class="m-0 raleway-bold" style="font-variant: small-caps;">mariano lopez</p>
+                                <p class="m-0 raleway-small text-dark">Home-owner</p>
+                            </div>
+                            <div class="d-flex my-3 justify-content-center align-items-center">
+                                <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <div class="d-flex p-4 raleway-normal">
+                            <img src="images/icons/calendar-2.svg" alt="" width="25" height="25">
+                            <p class="m-0 ms-3">Periodo disponible</p>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center pe-4 border-end border-dark"
+                                style="height: fit-content;">
+                                <p class="raleway-bold ms-4 me-2 mb-0" style="font-size: xxx-large;">24</p>
+                                <p class="raleway-small text-dark mb-0">Feb<br>2022</p>
+                            </div>
+                            <div class="d-flex align-items-center ps-4">
+                                <p class="raleway-bold me-2 mb-0" style="font-size: xxx-large;">07</p>
+                                <p class="raleway-small text-dark mb-0">Mar<br>2022</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-4 raleway-normal">
+                            <div class="d-flex ps-4">
+                                <img src="images/icons/dog.svg" alt="" width="25" height="25">
+                                <p class="ps-2 mb-0">2</p>
+                            </div>
+                            <div class="d-flex ps-4">
+                                <img src="images/icons/house.svg" alt="" width="25" height="25">
+                                <p class="ps-2 mb-0">casa</p>
+                            </div>
+                            <div class="d-flex ps-4">
+                                <img src="images/icons/city.svg" alt="" width="25" height="25">
+                                <p class="ps-2 mb-0">ciudad</p>
+                            </div>
+                        </div>
+                        <div class="px-3 pb-3">
+                            <button type="submit"
+                                class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light borde"
+                                data-toggle="button" aria-pressed="false" autocomplete="off" style="width: 72%;">Quiero
+                                postularme</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="px-5">
+                <div class="card mb-3" style="max-width: 100%;">
+                    <div class="card-header d-flex align-items-center bg-primary bg-gradient">
+                        <img src="images/icons/paw.svg" alt="" width="25" height="25">
+                        <p class="m-0 ms-3 cocon-small">Mascotas y necesidades</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text raleway-medium">Tengo 2 perros mayores: un Westie de 13 años y un Havamalt
+                            de 11 años. Son
+                            de muy bajo mantenimiento. Solo comen 1 comida
+                            al día por la mañana y tienen 2 caminatas (1 por la mañana y 1 hacia la noche) para atender
+                            sus negocios. Les encanta la compañía
+                            y les encanta acurrucarse contigo para ver la televisión. En su mayoría duermen todo el día
+                            cuando estamos en el trabajo.
+                            Después de su caminata, necesitan limpiarse los pies y la cara antes de volver al
+                            apartamento.
+                        </p>
+                    </div>
+                </div>
 
+                <hr class="featurette-divider my-5 m-auto" style="width: 50%">
+
+                <div class="card mb-5" style="max-width: 100%;">
+                    <div class="card-header d-flex align-items-center bg-primary bg-gradient">
+                        <img src="images/icons/description.svg" alt="" width="25" height="25">
+                        <p class="m-0 ms-3 cocon-small">Descripción de la casa</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text raleway-medium">Es una casa gigante con muchos espacios únicos, para tener
+                            una excelente estadia en todo momento. Como se ve en las fotos,
+                            cuenta con sala de juegos, living/comedor, una cocina integrada espectacular, jacuzzi, patio
+                            con parrilla, terraza etc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-primary bg-gradient borde z-depth-3 raleway-normal" style="width: 30%;">
+                    <p class="m-0 pt-4 px-5 pb-3 text-decoration-underline">¿Qué ofrece este lugar?</p>
+                    <div class="d-flex align-items-center px-5">
+                        <img src="images/icons/wifi.svg" alt="">
+                        <p class="m-0 p-3">Wifi</p>
+                    </div>
+                    <div class="d-flex align-items-center px-5">
+                        <img src="images/icons/pc.svg" alt="">
+                        <p class="m-0 p-3">Zona de trabajo</p>
+                    </div>
+                    <div class="d-flex align-items-center px-5">
+                        <img src="images/icons/snow.svg" alt="">
+                        <p class="m-0 p-3">Aire acondicionado</p>
+                    </div>
+                    <div class="d-flex align-items-center px-5">
+                        <img src="images/icons/jacuzzi.svg" alt="">
+                        <p class="m-0 p-3">Jacuzzi</p>
+                    </div>
+                    <div class="d-flex align-items-center px-5">
+                        <img src="images/icons/game.svg" alt="">
+                        <p class="m-0 p-3">Sala de juegos</p>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider my-5 m-auto" style="width: 50%">
+
+                <div class="card mb-5" style="max-width: 100%;">
+                    <div class="card-header d-flex align-items-center bg-primary bg-gradient">
+                        <img src="images/icons/map.svg" alt="" width="25" height="25">
+                        <p class="m-0 ms-3 cocon-small">Mapa de localización</p>
+                    </div>
+                    <div class="row g-0" style="height: 250px;">
+                        <div class="col-md-8">
+                            <iframe class="img-fluid rounded m-3 position-relative"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d147373.91728080765!2d-58.51854313261361!3d-34.62679867905987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1668717081080!5m2!1ses-419!2sar"
+                                width="800" height="450" style="border:0; height: -webkit-fill-available;"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <span class="position-absolute" style="left: 25%; top: 30%; padding: 5px;">
+                                <img class="" src="images/icons/house-map.svg" alt="">
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body d-flex align-items-start pt-5">
+                                <img src="images/icons/info.svg" alt="">
+                                <p class="card-text raleway-medium ps-3">Podrá visualizar la ubicación exacta una vez
+                                    que se
+                                    haya confirmado la postulación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="featurette-divider my-5 m-auto" style="width: 50%">
+
+                <div class="card mb-5" style="max-width: 100%;">
+                    <div class="card-header d-flex align-items-center bg-primary bg-gradient">
+                        <img src="images/icons/review.svg" alt="" width="25" height="25">
+                        <p class="m-0 ms-3 cocon-small">Calificaciones y reseñas</p>
+                    </div>
+                    <div id="reseña-1" class="card-body">
+                        <div class="bg-secondary bg-gradient borde z-depth-3">
+                            <div class="container-fluid">
+                                <div class="d-flex justify-content-start p-3">
+                                    <img class="rounded-circle" src="images/profile-7.jpg" alt="" width="100"
+                                        height="100">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="m-0 ps-2 raleway-normal" style="font-variant: small-caps;">emilia
+                                            perez</p>
+                                        <p class="m-0 ps-2 raleway-medium">26 de junio de 2022</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="raleway-bold ps-3 m-0">Hermoso hospedaje</p>
+                                <p class="raleway-normal ps-3 pb-3 m-0">Nos sentimos muy bienvenidos en su casa. Las
+                                    mascotas
+                                    eran amigables y disfrutamos
+                                    nuestro tiempo con ellas. ¡¡¡Los
+                                    extrañaremos!! ¡Gracias por permitirnos cuidarlos!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reseña-2" class="card-body">
+                        <div class="bg-secondary bg-gradient borde z-depth-3">
+                            <div class="container-fluid">
+                                <div class="d-flex justify-content-start p-3">
+                                    <img class="rounded-circle" src="images/profile-8.jpg" alt="" width="100"
+                                        height="100">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="m-0 ps-2 raleway-normal" style="font-variant: small-caps;">john smith
+                                        </p>
+                                        <p class="m-0 ps-2 raleway-medium">01 de abril de 2022</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="raleway-bold ps-3 m-0">Beautiful home and pets!</p>
+                                <p class="raleway-normal ps-3 pb-3 m-0">The home was very comfortable, it had all the
+                                    elements that one may need during the stay. The dogs were absolutely
+                                    adorable. Without a doubt it is a place where we would stay again. Super
+                                    recommended!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reseña-3" class="card-body">
+                        <div class="bg-secondary bg-gradient borde z-depth-3">
+                            <div class="container-fluid">
+                                <div class="d-flex justify-content-start p-3">
+                                    <img class="rounded-circle" src="images/profile-9.jpg" alt="" width="100"
+                                        height="100">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="m-0 ps-2 raleway-normal" style="font-variant: small-caps;">katie
+                                            roberts</p>
+                                        <p class="m-0 ps-2 raleway-medium">15 de diciembre de 2021</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="raleway-bold ps-3 m-0">Adorable pets</p>
+                                <p class="raleway-normal ps-3 pb-3 m-0">I enjoyed hanging out with the sweet dogs. They
+                                    both sat on the back porch with me
+                                    every morning, in the beautiful gardens. Taking care of them were easy. I stayed in
+                                    a comfortable guest room. Mariano is very kind, good people.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reseña-4" class="card-body">
+                        <div class="bg-secondary bg-gradient borde z-depth-3">
+                            <div class="container-fluid">
+                                <div class="d-flex justify-content-start p-3">
+                                    <img class="rounded-circle" src="images/profile-10.jpg" alt="" width="100"
+                                        height="100">
+                                    <div class="d-flex flex-column justify-content-center">
+                                        <p class="m-0 ps-2 raleway-normal" style="font-variant: small-caps;">paulo silva
+                                        </p>
+                                        <p class="m-0 ps-2 raleway-medium">03 de agosto de 2021</p>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                            <img class="m-1" src="images/icons/star.svg" alt="" width="25" height="25">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="raleway-bold ps-3 m-0">Maravilhoso</p>
+                                <p class="raleway-normal ps-3 pb-3 m-0">Mariano e as crianças (cachorros) foram os
+                                    anfitriões perfeitos! Eu estive lá por 2 viagens e terei o prazer de voltar mais uma
+                                    vez. Além do tempo com os cachorros, gostei de ver a vista da praia. Eles estão
+                                    localizados em uma área agradável e enquanto eu caminhava com os meninos me senti
+                                    100% seguro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-3 mb-5">
+                        <ul class="pagination raleway-small text-dark">
+                            <li id="anterior" class="waves-effect rounded-circle p-0"
+                                style="width: 30px; height: 30px;"><img src="images/icons/anterior.svg" alt=""
+                                    width="25" height="25"></li>
+                            <li id="uno" class="mx-2 waves-effect"><a style="width: 30px; height: 30px;">1</a>
+                            </li>
+                            <li id="dos" class="mx-2 waves-effect"><a style="width: 30px; height: 30px;">2</a>
+                            </li>
+                            <li id="siguiente" class="waves-effect rounded-circle p-0"
+                                style="width: 30px; height: 30px;"><img src="images/icons/siguiente.svg" alt=""
+                                    width="25" height="25"></li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body my-5">
+                        <div class="bg-secondary bg-gradient borde z-depth-3">
+                            <div class="container-fluid">
+                                <p class="raleway-bold m-0 px-3 pt-3">Escribe una reseña</p>
+                                <div class="d-flex justify-content-start px-3 pb-3 pt-2">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <img class="m-1" src="images/icons/empty-star.svg" alt="" width="25"
+                                            height="25">
+                                        <img class="m-1" src="images/icons/empty-star.svg" alt="" width="25"
+                                            height="25">
+                                        <img class="m-1" src="images/icons/empty-star.svg" alt="" width="25"
+                                            height="25">
+                                        <img class="m-1" src="images/icons/empty-star.svg" alt="" width="25"
+                                            height="25">
+                                        <img class="m-1" src="images/icons/empty-star.svg" alt="" width="25"
+                                            height="25">
+                                    </div>
+                                </div>
+                                <form action="#" method="post" class="raleway-normal p-3">
+                                    <div>
+                                        <div class="mb-3">
+                                            <textarea name="textarea" rows="5" cols="100" class="form-control"
+                                                placeholder="Comparte detalles de tu experiencia con este home-owner"
+                                                style="height: max-content;"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end" style="width: 100%;">
+                                        <button type="submit"
+                                            class="btn btn-primary bg-gradient text-center raleway-bold waves-effect waves-light borde mb-3"
+                                            data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">Publicar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="featurette-divider my-5 m-auto" style="width: 50%;">
+
+            <div class="bg-primary bg-gradient raleway-normal borde z-depth-3 px-5 py-4 mx-5 mb-5" style="width: 30%;">
+                <p class="m-0 text-decoration-underline">Contáctate con el home-owner</p>
+                <div class="mt-4">
+                    <div class="d-flex flex-row align-items-center">
+                        <img src="images/icons/phone.svg" alt="" width="25" height="25">
+                        <p class="m-0 ps-3 py-2">Tel: (054) 11 12345678</p>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                        <img src="images/icons/email.svg" alt="" width="25" height="25">
+                        <p class="m-0 ps-3 py-2">marianolopez@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="row p-5 m-0 bg-primary bg-gradient mt-5" style="width: 100%;">
+        <div class="col mb-3">
+            <p class="raleway-bold">House-sitters</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra a un
+                        cuidador</a></li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Home-owners</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="buscador.html" class="nav-link p-0 text-dark">Encuentra una casa</a>
+                </li>
+                <li class="nav-item mb-2"><a href="registro.html" class="nav-link p-0 text-dark">Registrarse</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Ayuda</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="como-funciona.html" class="nav-link p-0 text-dark">Cómo funciona</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3">
+            <p class="raleway-bold">Descubre más</p>
+            <ul class="nav flex-column raleway-normal">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Blog</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Opiniones</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">Experiencias</a></li>
+            </ul>
+        </div>
+
+        <div class="col mb-3 d-flex flex-column align-items-start">
+            <p class="raleway-bold">Contáctenos</p>
+            <div class="d-flex justify-content-between">
+                <a href="https://www.instagram.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/instagram.svg" alt="" width="30" height="30"></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="me-4 zoom" src="images/icons/twitter.svg"
+                        alt="" width="30" height="30"></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="me-4 zoom"
+                        src="images/icons/facebook.png" alt="" width="30" height="30"></a>
+            </div>
+            <div class="d-flex align-items-center my-3">
+                <img src="images/icons/email.svg" alt="" width="30" height="30">
+                <a class="ms-2 raleway-normal text-decoration-underline email"
+                    href="mailto:beelocals@hotmail.com?Subject=Consulta%20sobre%20House-sitting">Beelocals@hotmail.com</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 

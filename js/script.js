@@ -236,3 +236,78 @@ $('.dropdown-button').dropdown({
     constrainWidth: false,
 }
 );
+
+$(document).ready(function () {
+    $('#uno').addClass('bg-primary rounded-circle');
+    $('#reseña-3').hide();
+    $('#reseña-4').hide();
+    $('#anterior').css('opacity', 'calc(0.5)');
+    $('#anterior').css('cursor', 'default');
+    $('#anterior').removeClass('waves-effect');
+});
+
+$('#dos').click(function () {
+    $('#uno').removeClass('bg-primary rounded-circle');
+    $('#dos').addClass('bg-primary rounded-circle');
+    $('#reseña-3').show();
+    $('#reseña-4').show();
+    $('#anterior').css('opacity', 'calc(1)');
+    $('#anterior').css('cursor', 'pointer');
+    $('#anterior').addClass('waves-effect');
+    $('#reseña-1').hide();
+    $('#reseña-2').hide();
+    $('#siguiente').css('opacity', 'calc(0.5)');
+    $('#siguiente').css('cursor', 'default');
+    $('#siguiente').removeClass('waves-effect');
+
+});
+
+$('#siguiente').click(function () {
+    $('#uno').removeClass('bg-primary rounded-circle');
+    $('#dos').addClass('bg-primary rounded-circle');
+    $('#reseña-3').show();
+    $('#reseña-4').show();
+    $('#anterior').css('opacity', 'calc(1)');
+    $('#anterior').css('cursor', 'pointer');
+    $('#anterior').addClass('waves-effect');
+    $('#reseña-1').hide();
+    $('#reseña-2').hide();
+    $('#siguiente').css('opacity', 'calc(0.5)');
+    $('#siguiente').css('cursor', 'default');
+    $('#siguiente').removeClass('waves-effect');
+
+});
+
+$('#uno').click(function () {
+    $('#dos').removeClass('bg-primary rounded-circle');
+    $('#uno').addClass('bg-primary rounded-circle');
+    $('#reseña-1').show();
+    $('#reseña-2').show();
+    $('#anterior').css('opacity', 'calc(0.5)');
+    $('#anterior').css('cursor', 'default');
+    $('#anterior').removeClass('waves-effect');
+    $('#reseña-3').hide();
+    $('#reseña-4').hide();
+    $('#siguiente').css('opacity', 'calc(1)');
+    $('#siguiente').css('cursor', 'pointer');
+    $('#siguiente').addClass('waves-effect');
+});
+
+$('#anterior').click(function () {
+    $('#dos').removeClass('bg-primary rounded-circle');
+    $('#uno').addClass('bg-primary rounded-circle');
+    $('#reseña-1').show();
+    $('#reseña-2').show();
+    $('#siguiente').css('opacity', 'calc(1)');
+    $('#siguiente').css('cursor', 'poiner');
+    $('#siguiente').addClass('waves-effect');
+    $('#reseña-3').hide();
+    $('#reseña-4').hide();
+    $('#anterior').css('opacity', 'calc(0.5)');
+    $('#anterior').css('cursor', 'default');
+    $('#anterior').removeClass('waves-effect');
+});
+
+$('#notif').click(function () {
+    $('#bola').hide();
+});
